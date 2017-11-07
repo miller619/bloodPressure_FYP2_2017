@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.virus.bloodpressure.Instruction">
+
+    <ImageButton
+        android:id="@+id/read_bp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:background="@drawable/heart_with_pulse"
+        android:contentDescription="@string/bp_reading" />
+
+
+    <ScrollView
+        android:id="@+id/user_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/read_bp"
+        android:layout_marginTop="30dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="20dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/economica"
+                android:text="@string/read_the_instructions_very_carefullly"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/economica"
+                android:text="@string/make_sure_your_index_finger_of_right_hand_is_placed_on_the_camera"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/economica"
+                android:text="@string/do_not_apply_to_much_pressure_on_the_camera"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/economica"
+                android:text="@string/make_sure_the_lense_is_covered_completely"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/economica"
+                android:text="@string/keep_yourself_as_calm_as_possible_while_taking_the_reading"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/economica"
+                android:text="@string/take_special_care_that_you_do_not_make_any_movement_of_your_hand_once_the_reading_starts"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/economica"
+                android:text="@string/it_is_recommended_to_lie_down_or_sit_on_a_chair_during_the_reading"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/economica"
+                android:text="@string/avoid_standing"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/economica"
+                android:text="@string/once_you_have_taken_your_position_and_are_ready_to_take_the_reading_tap_on_the_above_icon"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

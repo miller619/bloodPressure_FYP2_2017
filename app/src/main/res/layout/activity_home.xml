@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.virus.bloodpressure.Home">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/economica"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="28sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="33dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/economica"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/this_application_is_built_to_give_you_an_estimate_of_your_blood_pressure_and_heart_rate"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/economica"
+        android:text="@string/fill_in_the_details_below_and_click_next"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <ScrollView
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/economica"
+                    android:text="@string/height"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/user_height"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/economica"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/economica"
+                    android:text="@string/cm"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/economica"
+                    android:text="@string/weight"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/user_weight"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/economica"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/economica"
+                    android:text="@string/kg"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/economica"
+                    android:text="@string/age"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/user_age"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/economica"
+                    android:inputType="number|numberSigned|numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/economica"
+                    android:text="@string/years"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gender"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
+
+                    <RadioButton
+                        android:id="@+id/user_gender_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/male"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/user_gender_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/female"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/goto_bpReader_instruction"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="84dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/next_page" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

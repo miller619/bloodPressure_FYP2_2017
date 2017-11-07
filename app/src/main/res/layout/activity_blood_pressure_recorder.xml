@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.virus.bloodpressure.BloodPressureRecorder">
+
+
+    <SurfaceView
+        android:id="@+id/preview_window"
+        android:layout_width="176dp"
+        android:layout_height="144dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/button"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/animationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/heartbeat"
+        android:background="@drawable/animation_list_heart"/>
+
+    <LinearLayout
+        android:id="@+id/hr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:labelFor="@+id/calculate"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/economica"
+            android:text="@string/heart_rate"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/show_heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/economica"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/economica"
+            android:text="@string/systolic_pressure"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/show_systolic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/economica"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/economica"
+            android:text="@string/diastolic_pressure"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/show_diastolic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/economica"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

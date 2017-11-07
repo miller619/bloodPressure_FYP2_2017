@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BloodPressure</string>
+    <string name="welcome">Welcome</string>
+    <string name="this_application_is_built_to_give_you_an_estimate_of_your_blood_pressure_and_heart_rate">This application is built to give you an estimate of your Blood Pressure and Heart Rate</string>
+    <string name="fill_in_the_details_below_and_click_next">Fill in the details below and click next</string>
+    <string name="height">Height: </string>
+    <string name="height_in_cm">height in cm</string>
+    <string name="cm">cm</string>
+    <string name="weight">Weight:</string>
+    <string name="kg">Kg</string>
+    <string name="age">Age:</string>
+    <string name="years">years</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender:</string>
+    <string name="bp_reading">bp_reading</string>
+    <string name="read_the_instructions_very_carefullly">Read the instructions very carefullly</string>
+    <string name="make_sure_your_index_finger_of_right_hand_is_placed_on_the_camera">Make sure your index finger of right hand is placed on the camera</string>
+    <string name="do_not_apply_to_much_pressure_on_the_camera">Do not apply to much pressure on the camera.</string>
+    <string name="make_sure_the_lense_is_covered_completely">Make sure the lense is covered completely</string>
+    <string name="keep_yourself_as_calm_as_possible_while_taking_the_reading">Keep yourself as calm as possible while taking the reading</string>
+    <string name="take_special_care_that_you_do_not_make_any_movement_of_your_hand_once_the_reading_starts">Take special care that you do not make any movement of your hand once the reading starts</string>
+    <string name="it_is_recommended_to_lie_down_or_sit_on_a_chair_during_the_reading">It is recommended to lie down or sit on a chair during the reading</string>
+    <string name="avoid_standing">Avoid standing</string>
+    <string name="once_you_have_taken_your_position_and_are_ready_to_take_the_reading_tap_on_the_above_icon">Once you have taken your position and are ready to take the reading Tap on the above icon</string>
+    <string name="button">Tap to get the result</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="systolic_pressure">Systolic Pressure</string>
+    <string name="diastolic_pressure">Diastolic Pressure</string>
+    <string name="heartbeat">heartBeat</string>
+</resources>
